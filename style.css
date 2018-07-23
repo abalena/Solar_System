@@ -1,0 +1,69 @@
+nav{
+	background: url('img/milky_way.jpg');
+	clear: both;
+	height: 35px;
+}
+.block{
+  width: 100%;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: Verdana,sans-serif;
+	}
+header{	
+	text-align: center;
+	font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+}
+p{
+	font-size: 1.1em;
+	margin-left:25px;
+	margin:25px;	
+}
+ol{
+	font-size: 1.2em;
+	line-height: 1.5;
+	padding-left: 75px;
+}
+figure{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+footer{
+	clear: both;
+	background: url('img/milky_way.jpg');
+	color: rgb(255,255,255);
+	text-align: center;
+	font-size: 0.7em;
+}
+.first_section article{
+	width: 60%;
+	margin: 25px;
+	margin-right: 25px;
+}
+.first_section aside{
+	width: 35%;
+	float: right;
+	margin-bottom: 13%;
+	font-size: 1.1em;
+}
+figure table{
+	margin-top: 25px;
+}
+.reg{
+	position: absolute;
+	text-decoration: none;
+	color: rgb(255,255,255);
+	font-size: 23px;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0.5);
+	right: 4%;
+	width: 14%;
+	height: 5%;
+
+}

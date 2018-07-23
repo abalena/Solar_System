@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="utf-8">
+    <title>Реєстрація</title>
+    <link type="text/css" rel="stylesheet" href="style_for_reg.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="script/preview.js"></script>
+</head>
+<body>
+<form class="input" name="form" method="post" action="#">
+    <fieldset class="registration">
+		<label for="email" class="form_label">
+			Введіть e-mail:
+		</label><br>
+		<input class="form_input" type="email" id="email" placeholder="yourmail@example.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" title="Повинна містити як мінімум одну крапку після символа '@'. Приклад: yourmail@example.com." required><br>						
+		<label for="num" class="form_label">
+			Введіть номер телефону:
+		</label><br>
+		<input class="form_input" type="tel" id="num" placeholder="+38093939393" pattern="^[+]380[0-9]{9}$" title="Повинен починатись з '+' і 12 цифр. Приклад: +380939393939" required><br>
+		<label for="firstname" class="form_label">
+    		Ваше ім'я:
+		</label><br>
+		<input name="firstname" class="form_input" type="text" id="firstname" placeholder="Іван" pattern="^[A-Za-zА-Яа-яіїєІЇЄЁё]{2,40}$" title="Повинно складатись не менше ніж з 2 і не більше ніж з 40 літер. (Кирилиця або латинь) Приклад: Іван" required><br>
+		<label for="lastname" class="form_label">
+			Ваше прізвище:
+		</label><br>
+		<input name="lastname" class="form_input" type="text" id="lastname" placeholder="Іванов" pattern="^[A-Za-zА-Яа-яіїєІЇЄЁё]{2,40}$" title="Повинно складатись не менше ніж з 2 і не більше ніж з 40 літер. (Кирилиця або латинь) Приклад: Іванов" required><br>
+		<label for="home" class="form_label">
+			Місце проживання:
+		</label><br>
+		<input class="form_input" title="Обласний центр вашого міста. Повинен починатися з великої літери." name="city" pattern="^[А-ЯЇІЄA-Z]{1}[a-zа-яіїє]{1,20}$" type="text" list="dlist" id="home" autocomplete="off" required> 
+			<datalist id="dlist">
+				<option value="Київ">
+				<option value="Черкаси">
+				<option value="Львів">
+				<option value="Вінниця">
+				<option value="Херсон">
+				<option value="Суми">
+				<option value="Тернопіль">
+			</datalist><br>
+		<label class="form_label" for="upload_img">Завантажте фото для вашого профілю</label></br>
+		<input class="form_input" type="file" name="img" id="upload_img" accept="image/*" multiple=""><br><br>
+		<img src="#" id="uploaded_img" alt="preview" class="uploaded_img" />
+    </fieldset>
+    <input type="submit" value="Реєстрація" class="submit" id="submit">
+</form>
+</body>
+</html>
