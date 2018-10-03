@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>Реєстрація</title>
     <link type="text/css" rel="stylesheet" href="style_for_reg.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="script/preview.js"></script>
 </head>
 <body>
 <form class="input" name="form" method="post" action="#">
@@ -14,6 +12,10 @@
 			Введіть e-mail:
 		</label><br>
 		<input class="form_input" type="email" id="email" placeholder="yourmail@example.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" title="Повинна містити як мінімум одну крапку після символа '@'. Приклад: yourmail@example.com." required><br>						
+		<label for="password" class="form_label">
+			Введіть пароль
+		</label><br>
+		<input class="form_input" type="password" id="password" placeholder="****" required><br>
 		<label for="num" class="form_label">
 			Введіть номер телефону:
 		</label><br>

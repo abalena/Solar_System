@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="utf-8">
+    <title>Вхід</title>
+	<link type="text/css" rel="stylesheet" href="style_for_reg.css">
+</head>
+<body>
+<form class="input" name="form" method="post" action="#">
+    <fieldset class="registration">
+		<label for="email" class="form_label">
+			Введіть e-mail:
+		</label><br>
+		<input class="form_input" type="email" id="email" placeholder="yourmail@example.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" title="Повинна містити як мінімум одну крапку після символа '@'. Приклад: yourmail@example.com." required><br>	
+				<label for="password" class="form_label">
+			Введіть пароль
+		</label><br>
+		<input class="form_input" type="password" id="password" placeholder="****" required><br>
+    </fieldset>
+    <button type="submit" class="submit">Вхід</button>
+	<button type="reset"class="submit reset">Скасувати</button>
+</form>
+</body>
+</html>
